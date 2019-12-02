@@ -6,9 +6,6 @@ ENV     VERSION=master
 WORKDIR /usr/src/ylt
 
 RUN     npm install -g npm@latest \
-        && npm cache clean -f \
-	&& npm install -g n \
-        && n 10 \
         && npm install -g node-gyp \
         && npm install -g grunt-cli \
         && git clone https://github.com/gmetais/YellowLabTools.git -b ${VERSION} . \
