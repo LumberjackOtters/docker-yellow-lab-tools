@@ -1,0 +1,6 @@
+services:
+  - docker
+  
+script:
+  - docker run -v ${PWD}/Dockerfile:/Dockerfile replicated/dockerfilelint /Dockerfile
+  - docker run -it --rm -v "${PWD}/Dockerfile":/Dockerfile:ro redcoolbeans/dockerlint
