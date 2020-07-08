@@ -1,6 +1,6 @@
 FROM    node:14.4.0
 
-ENV     VERSION=v1.13.4
+ENV     VERSION=v1.13.3
 
 WORKDIR /usr/src/ylt
 
